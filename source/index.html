@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>НЕОДЕНТ</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
+    <link rel="icon" href="img/icons/32.svg" type="image/svg+xml"> <!-- 32x32 -->
+    <link rel="apple-touch-icon" href="/source/img/icons/180.png"> <!-- 180x180 -->
+    <link rel="manifest" href="manifest.webmanifest.json"> <!-- 192x192 --> <!-- 512x512 -->
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
+  </head>
+
+  <body class="page-body">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__burger-menu" tabindex="1">
+            <div class="burger-menu__line burger-menu__line--first-translate"></div>
+            <div class="burger-menu__line burger-menu__line--second-rotate"></div>
+            <div class="burger-menu__line burger-menu__line--third-rotate"></div>
+            <div class="burger-menu__line burger-menu__line--fourth-translate"></div>
+          </div>
+          <div class="page-header__logo">
+              <a>
+              <picture>
+                <source class="page-header__logo-desktop" srcset="img/logo_desctop.png" media="(min-width: 1152px)">
+                <img class="page-header__logo-mobile" src="img/logo_mobile.png" width="120" height="45" alt="Логотип Неодент">
+              </picture>
+            </a>
+              <p>Стоматологические материалы <br>
+                и оборудование</p>
+            </div>
+          <button class="btn btn--feedback">Заказать звонок</button>
+          <div class="contact page-header--contact">
+              <div class="phone">8 800 000 00 00</div>
+              <div class="social">
+                <a href="">Фейсбук</a>
+                <a href="">Вконтакте</a>
+                <a href="">Инстаграмм</a>
+              </div>
+              <div class="address">
+                127015, г. Москва, ул. Новодмитровская,
+                д.5А стр.4, подъезд 2, этаж 1
+              </div>
+            </div>
+          <ul class="top-navigation page-header--nav">
+              <li class="top-navigation__item">
+                <a class="top-navigation__link top-navigation__link--current-item">О компании</a>
+              </li>
+
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="catalog.html">Каталог</a>
+              </li>
+
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Акции</a>
+              </li>
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Отзывы</a>
+              </li>
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Доставка</a>
+              </li>
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Сертификаты</a>
+              </li>
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Семинары</a>
+              </li>
+              <li class="top-navigation__item">
+                <a class="top-navigation__link " href="form.html">Контакты</a>
+              </li>
+            </ul>
+          <div class="personal page-header--personal">
+            <div class="search">
+              <form action=""><input type="text">
+                <button>Поиск</button>
+              </form>
+            </div>
+            <div class="login">
+
+            </div>
+            <div class="cart">
+              Корзина
+            </div>
+          </div>
+          <!-- /.personal -->
+          </div>
+          <!-- /.page-header__wrapper -->
+      </header>
+
+      <main class="page-main">
+        <section class="main-banner">
+          <div class="wrapper">
+            <div class="main-banner__slider slider">
+              <div class="slider__item">
+                <h2>Стоматологические материалы
+                  и оборудование</h2>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="wrapper">
+            <ul>
+            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+              <div class="price">17 242 руб</div>
+              <button class="btn">Купить</button>
+            </li>
+            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+              <div class="price">17 242 руб</div>
+              <button class="btn">Купить</button>
+            </li>
+            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+              <div class="price">17 242 руб</div>
+              <button class="btn">Купить</button>
+            </li>
+          </ul>
+          </div>
+        </section>
+        <section class="section">
+          <ul>
+            <li><a href=""><img src="" alt="">Терапия</a></li>
+            <li><a href=""><img src="" alt="">Хирургия</a></li>
+            <li><a href=""><img src="" alt="">Ортопедия</a></li>
+            <li><a href=""><img src="" alt="">Ортодонтия</a></li>
+            <li><a href=""><img src="" alt="">ЗТЛ</a></li>
+            <li><a href=""><img src="" alt="">Оборудование</a></li>
+          </ul>
+        </section>
+        <section class="advantage">
+          <div class="wrapper">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--delivery">Доставка от 3-х дней</li>
+              <li class="advantage__item advantage__item--range">3&nbsp;000 товаров в ассортименте</li>
+              <li class="advantage__item advantage__item--delivery-free">Бесплатная доставка от 2&nbsp;000</li>
+              <li class="advantage__item advantage__item--experience">Опыт работы 15 лет</li>
+              <li class="advantage__item advantage__item--warranty">Гарантийное обслуживание</li>
+            </ul>
+          </div>
+        </section>
+        <section class="description">
+          <div class="wrapper">
+            <div class="descrition__images"><img src="" alt=""><img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+            </div>
+
+          <div class="description__text">
+            <p>Мы рады приветствовать Вас в специализированном интернет-магазине стоматологического оборудования Каталог наших товаров включает в себя все, что
+            <p>необходимо для комплексного оснащения стоматологического кабинета и зуботехнической лаборатории:</p>
+            <p> оборудование и мебель; материалы и инструменты;</p>
+            <p>лекарственные препараты и профилактические средства; литература и обучающие материалы.</p>
+            <p>Современное оснащение рабочего места врача-стоматолога медицинскими инструментами, оборудованием и материалами - залог оказания к. Текст о компа| услуг и эффективной помощи пациентам вне зависимости от того, о каком направлении идет речь - будь то терапевтическая, эстетическая, XI-ортодонтическая стоматология, пародонтология или имплантология. При выборе необходимых товаров важно обратить внимание не тольн характеристики, первоочередным является качество - оно обеспечивается использованием соответствующего сырья и строгим контролем на производства. Сотрудничает только с надежными поставщиками стоматологических товаров, поэтому в их качестве не приходится сомнева отвечают всем принятым требованиям и обладают нужными характеристиками Товары представлены производителями с мировым именем: Зро(о0еп1а1, Оеп1атепса, Ы1С, 3|пд|-Рак и др.
+            </p>
+            <p> Для того, чтобы купить необходимые товары, достаточно обратиться в интернет-магазин - все для стоматологии от расходных материалов до стоматологических установок и современного оборудования легко найти на страницах каталога.</p>
+            </p>
+          </div>
+          </div>
+        </section>
+        <section class="maker">
+          <div class="maker__slider slider">
+            <div class="slider__item">
+              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+            </div>
+          </div>
+
+        </section>
+        <section class="certificate">
+          <h2>Сертификаты</h2>
+          <ul class="certificate__list">
+            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+          </ul>
+        </section>
+        <section class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A670cce6f528ac8ed8a1d2a23d7361471642baae03b8a56c21d4c6fc4181853c6&amp;source=constructor" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="column">
+          <nav>
+            <ul>
+              <li><a href="">О компании</a><a href="">Каталог</a><a href="">Акции</a><a href="">Отзывы</a></li>
+            </ul>
+          </nav>
+          <div class="personal footer--personal">
+            <div class="search">
+              <form action=""><input type="text">
+                <button>Поиск</button>
+              </form>
+            </div>
+            <div class="login">
+
+            </div>
+            <div class="cart">
+              Корзина
+            </div>
+          </div>
+          <!-- /.personal -->
+        </div>
+        <!-- /.column -->
+        <div class="column"><nav><ul>
+            <li><a href="">Доставка</a><a href="">Сертификаты</a><a href="">Семинары</a><a href="">Контакты</a></li>
+          </ul></nav></div>
+        <!-- /.column -->
+        <div class="column"><nav><ul>
+         <li><a href="">Терапия</a><a href="">Хирургия</a><a href="">Оборудование</a><a href="">Ортодонтия</a><a href="">Ортопедия</a><a href="">ЗТЛ</a></li>
+        </ul></nav></div>
+        <!-- /.column -->
+        <div class="contact contact--footer">
+          <div class="phone">8 800 000 00 00</div>
+          <a href="mailto:shop@mydent24.ru" class="email">shop@mydent24.ru</a>
+          <!-- /.email -->
+          <div class="social">
+            <a href="">Фейсбук</a>
+            <a href="">Вконтакте</a>
+            <a href="">Инстаграмм</a>
+          </div>
+          <div class="address">
+            127015, г. Москва, ул. Новодмитровская,
+            д.5А стр.4, подъезд 2, этаж 1
+          </div>
+        </div>
+        <div class="column">
+          <button class="btn btn--feedback">Заказать звонок</button>
+          <div class="page-footer__logo">
+            <a>
+              <picture>
+                <source class="page-header__logo-desktop" srcset="img/logo-desktop.svg" media="(min-width: 1320px)">
+                <source class="page-header__logo-tablet" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img class="page-header__logo-mobile" src="img/logo.svg" width="33" height="38" alt="Логотип cat energy">
+              </picture>
+            </a>
+            <p>Стоматологические материалы
+              и оборудование</p>
+          </div>
+        </div>
+        <!-- /.column -->
+      </footer>
+      <script src="js/script.min.js"></script>
+  </body>
+</html>

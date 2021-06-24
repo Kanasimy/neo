@@ -1,0 +1,14 @@
+@mixin fonts($font-family, $font-weight, $font-style, $font-size, $line-height, $font-color: $simple-text) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin fontSizeColor($font-size, $line-height, $font-color: $simple-text) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+}
