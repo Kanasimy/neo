@@ -1,0 +1,50 @@
+
+.owl-carousel .slider__item {
+  margin: 0 auto;
+}
+
+.owl-stage-outer {
+  margin: 0 auto;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-nav {
+  margin: 0 auto;
+  max-width: $desktop-width;
+  position: absolute;
+  top:50%;
+  width: 100%;
+  height: 0px;
+  z-index: 999;
+  left: 0;
+  right: 0;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-prev:focus, .owl-next:focus, .owl-prev:hover, .owl-next:hover {
+  opacity: 0.8;
+  outline:0;
+}
+
+.owl-prev {
+  left: $h-padding;
+}
+
+.owl-next {
+  right: $h-padding;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 35px;
+  @media (min-width: $mobile-max-width) {
+    font-size: 70px;
+  }
+}
+

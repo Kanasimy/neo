@@ -1,0 +1,51 @@
+.page-banner {
+  position:relative;
+  &__img {
+    object-fit: fill;
+  }
+  &__item {
+    background-position: center;
+    background-size: cover;
+  }
+  .owl-nav {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .owl-prev, .owl-next {
+    @media (min-width: $mobile-max-width) {
+      transform: translateY(-60px);
+    }
+  }
+  .owl-prev span, .owl-next span {
+    color: $white;
+    font-size: 70px;
+  }
+
+  &__header {
+    color: $white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: $v-padding;
+    @media (min-width: $mobile-max-width) {
+      font-size: 48px;
+    }
+  }
+
+  &__wrapper {
+    z-index: 100;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right:0;
+    top:0;
+    @media (min-width: $mobile-max-width) {
+      top:60px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

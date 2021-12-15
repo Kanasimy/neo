@@ -6,5 +6,8 @@
 *.psd
 node_modules/
 build/
+psd/
+webdata/
+source/img/
 npm-debug.*
 Thumbs.db

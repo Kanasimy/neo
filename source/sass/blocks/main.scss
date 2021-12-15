@@ -1,0 +1,7 @@
+.main {
+  //todo вылазит слайд?
+  overflow: hidden;
+  @media (min-width: $mobile-max-width) {
+    margin-top: -60px;
+  }
+}

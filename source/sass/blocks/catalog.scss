@@ -1,0 +1,133 @@
+.popular .product-item-info-container .bx-catalog-subscribe-button,
+.catalog .product-item-info-container .bx-catalog-subscribe-button,
+.popular .product-item-info-container .btn-link,
+.catalog .product-item-info-container .btn-link
+{
+  margin-top: 10px;
+  max-width: 100%;
+  float:none;
+}
+
+.catalog {
+  background: $section-bg;
+  padding: 0 0 20px 0;
+  @media (min-width: $mobile-max-width) {
+    padding: $section-padding 0;
+  }
+  overflow: auto;
+
+  &__image-wrapper {
+    max-height: 300px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width:auto;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    color: $black;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-item-info-container {
+    flex-grow: 1;
+    .btn {
+      width:100%;
+      max-width: 120px;
+      float:right;
+    }
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: bold;
+    color: $text-black;
+  }
+
+  &__link {
+    margin: $v-padding 0;
+    display: inline-block;
+    color: $black;
+
+    &:focus, &:visited {
+      color: $black;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+
+
+    .owl-prev, .owl-next {
+      span {
+        color: $gray;
+      }
+    }
+
+    @media (min-width: $mobile-max-width) {
+      .owl-next {
+        right: -22px;
+      }
+      .owl-prev {
+        left: -22px;
+      }
+    }
+  }
+
+  &__item {
+    flex-shrink: 1;
+    flex-grow: 0;
+    column-gap: $h-padding * 2;
+    text-align: center;
+    padding: 20px 15px 32px 15px;
+    width: 100%;
+    min-height: 385px;
+    max-width: 360px;
+    background: $white;
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    @media (min-width: $mobile-max-width) {
+      width: 30%;
+      margin-bottom: 0;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__link {
+    margin: $v-padding 0;
+    display: inline-block;
+  }
+
+  &__price {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.owl-carousel .popular__item {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.product-item-compare {
+  margin-top: 10px;
+}

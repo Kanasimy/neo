@@ -1,0 +1,59 @@
+.btn, .btn.btn-default {
+  white-space: nowrap;
+  background: $blue;
+  color:$white;
+  border: none;
+  overflow: hidden;
+  cursor:pointer;
+  font-size: 14px;
+  border-radius: 14px * 1.6;
+  line-height: 40px;
+  padding:0 10px;
+  &:hover {
+    background: $light-blue !important;
+    color: $white;
+  }
+  &:focus, &:visited, &:active:focus, &:active {
+    color: $white;
+    box-shadow: none;
+    outline: none;
+  }
+}
+.btn--more {
+  font-size: 14px;
+  border-radius: 14px * 1.6;
+  line-height: 14px*3;
+  padding:0 35px;
+
+  @media (min-width: $mobile-max-width) {
+    font-size: 18px;
+    border-radius: 18px * 1.6;
+    line-height: 18px*3;
+    padding:0 18px * 4.2;
+  }
+}
+
+
+
+.btn--buy, .btn--cart  {
+  padding:0 25px;
+  span {font-weight: 400;}
+  @include fonts('Arial Narrow', normal, normal, 14px, 48px, $white);
+  @media (min-width: $mobile-max-width) {
+    @include fonts('Arial Narrow', normal, normal, 16px, 48px, $white)
+  }
+  @media (min-width: $mobile-max-width) {padding:0 38px;}
+}
+
+.btn-link, .btn-link:hover, .btn-link:focus {
+  background: transparent!important;
+  text-decoration: none;
+  color: $text-black;
+  text-decoration: none;
+}
+
+.btn--cart {
+  background: #849eb7;
+}
+
+

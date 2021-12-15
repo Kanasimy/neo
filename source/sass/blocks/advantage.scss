@@ -1,0 +1,66 @@
+.advantage {
+  background-color: $black;
+  background-size: cover;
+  background-image: url("../img/advantages_m.jpg");
+  @media (min-width: $mobile-max-width) {
+    background-image: url("../img/advantages.png");
+  }
+   .advantage__wrapper {
+     display: flex;
+     align-items: center;
+     height: 455px;
+     @media (min-width: $mobile-max-width) {
+       height: 290px;
+     }
+   }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (min-width: $mobile-max-width) {
+      justify-content: space-between;
+      width:100%;
+    }
+  }
+  &__item {
+    width: 50%;
+    color: $white;
+    text-align: center;
+    @media (min-width: $mobile-max-width) {
+      width: 20%;
+    }
+    &::before{
+      content: '';
+      display: block;
+      width: 70px;
+      height: 70px;
+      background-color: $blue;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 35px;
+      margin: 20px auto 10px auto;
+      @media (min-width: $mobile-max-width) {
+      margin: 0 auto $v-padding auto;
+      }
+    }
+    &--delivery::before{
+      background-image: url("../img/overtime.png");
+
+    }
+    &--range::before{
+      background-image: url("../img/report.png");
+    }
+    &--delivery-free::before{
+      background-image: url("../img/delivery.png");
+    }
+    &--experience::before{
+      background-image: url("../img/experience.png");
+    }
+    &--warranty::before{
+      background-image: url("../img/trophy.png");
+    }
+  }
+}

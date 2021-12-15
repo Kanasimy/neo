@@ -1,0 +1,6 @@
+.bx-sidebar-block {
+  padding: 20px 0 0 0;
+  @media (min-width: $mobile-max-width) {
+    padding: 190px 0 0 0;
+  }
+}

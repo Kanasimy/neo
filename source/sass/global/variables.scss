@@ -1,12 +1,27 @@
 // colors
+$text-black: #010101;
 $black: #6a6a6a;
+$gray: #e1e1e1;
+$light-gray: #f0f0f0;
+$section-bg: #fafafa;
+$blue: #027af6;
+$light-blue: #02a3f6;
+$white: white;
+
+//padding
+$h-padding: 15px;
+$v-padding: 20px;
+$section-padding: 80px;
+$section-padding-mobile: 30px;
 
 // fonts
-$fontOswaldRegular: "Oswald Regular", "Arial", sans-serif;
-$fontOswaldMedium: "Oswald Medium", "Arial", sans-serif;
+$fontOswaldRegular: "Arial Narrow", "Arial", sans-serif;
+$fontOswaldMedium: "Arial Narrow", "Arial", sans-serif;
 $fontArial: "Arial", sans-serif;
+$font-size-base: 14px;
 
 // media
-$mobile-width: 286px;
-$mobile-max-width: 900px;
-$desktop-width: 1320px;
+$mobile-width: 290px;
+$mobile-min-width: 479px;
+$mobile-max-width: 920px;
+$desktop-width: 1170px;

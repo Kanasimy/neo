@@ -1,0 +1,112 @@
+.page-footer {
+  background-color: $black;
+  color: white;
+
+  &__wrapper {
+    padding: 30px $h-padding 20px $h-padding;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $mobile-max-width) {
+      padding: 75px 0 40px;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 137px 137px 1fr 280px 250px;
+    }
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 137px 220px 1fr 280px 250px;
+    }
+  }
+  &__logo {
+    margin: $v-padding;
+  }
+  &--contact {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    @media (min-width: $mobile-max-width) {
+      text-align: right;
+    }
+  }
+  &--personal {
+    @media (min-width: $mobile-max-width) {
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  }
+
+  &--btn {
+    font-size: 16px;
+    width: 100%;
+    padding:0;
+  }
+  &__logo p {
+    display: none;
+  }
+  .column, .page-footer--btn {
+    display: none;
+    @media (min-width: $mobile-max-width) {
+      display: block;
+    }
+  }
+  //todo перенести на место
+  .column--logo {
+    display:block;
+    order: -1;
+    @media (min-width: $mobile-max-width) {
+      order: 0;
+      padding-left: 55px;
+    }
+  }
+  &__nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    text-decoration: none;
+    color:$white;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  &--address {
+    line-height: 1.2;
+    padding: $h-padding 0;
+  }
+  &__create {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (min-width: $mobile-max-width) {
+      margin-top: 30px;
+    }
+  }
+
+  &--login {
+    background-image: url("../img/log.png");
+  }
+  &--search-btn {
+    background-image: url("../img/search.png");
+  }
+  &--cart {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/cart.png");
+  }
+  &--vk {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/vk.png");
+  }
+  &--fb {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/fb.png");
+  }
+  &--im {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/im.png");
+  }
+}

@@ -1,0 +1,6 @@
+.map iframe {
+  height: 280px;
+  @media (min-width: $mobile-max-width) {
+    height:600px;
+  }
+}

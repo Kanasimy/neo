@@ -1,0 +1,35 @@
+.top-navigation {
+  width: 100%;
+  margin:0;
+  &--close {
+    display: none;
+  }
+  &--no-js {
+    display:block;
+  }
+  background: $light-gray;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font-size: 16px;
+    color: $black;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  @media (min-width: $mobile-max-width) {
+    position: static;
+    padding: 0 $h-padding 0 0;
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    &__link {
+      line-height: 60px;
+    }
+  }
+}

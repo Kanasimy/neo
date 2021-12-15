@@ -5,55 +5,78 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>НЕОДЕНТ</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
-    <link rel="icon" href="img/icons/32.svg" type="image/svg+xml"> <!-- 32x32 -->
-    <link rel="apple-touch-icon" href="/source/img/icons/180.png"> <!-- 180x180 -->
-    <link rel="manifest" href="manifest.webmanifest.json"> <!-- 192x192 --> <!-- 512x512 -->
-    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
+<!--    <link rel="icon" href="favicon.ico"> &lt;!&ndash; 32x32 &ndash;&gt;-->
+<!--    <link rel="icon" href="img/icons/32.svg" type="image/svg+xml"> &lt;!&ndash; 32x32 &ndash;&gt;-->
+<!--    <link rel="apple-touch-icon" href="/source/img/icons/180.png"> &lt;!&ndash; 180x180 &ndash;&gt;-->
+<!--    &lt;!&ndash; 192x192 <link rel="manifest" href="manifest.webmanifest.json">   512x512 &ndash;&gt;-->
+    <link rel="preload" href="fonts/LucidaSansUnicode.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/LucidaSansUnicode.woff" type="font/woff" as="font" crossorigin>
   </head>
-
-  <body class="page-body">
+<body>
+  <div class="page-body">
+  <!-- /. -->
       <header class="page-header">
-        <div class="page-header__wrapper">
-          <div class="page-header__burger-menu" tabindex="1">
-            <div class="burger-menu__line burger-menu__line--first-translate"></div>
-            <div class="burger-menu__line burger-menu__line--second-rotate"></div>
-            <div class="burger-menu__line burger-menu__line--third-rotate"></div>
-            <div class="burger-menu__line burger-menu__line--fourth-translate"></div>
+        <div class="page-header__wrapper wrapper">
+          <div class="page-header__burger">
+            <div class="burger-menu burger-menu--no-js" tabindex="1">
+              <div class="burger-menu__line burger-menu__line--first"></div>
+              <div class="burger-menu__line burger-menu__line--second"></div>
+              <div class="burger-menu__line burger-menu__line--third"></div>
+              <div class="burger-menu__line burger-menu__line--fourth"></div>
+            </div>
+            <!-- /.burger-menu -->
           </div>
           <div class="page-header__logo">
               <a>
-              <picture>
-                <source class="page-header__logo-desktop" srcset="img/logo_desctop.png" media="(min-width: 1152px)">
-                <img class="page-header__logo-mobile" src="img/logo_mobile.png" width="120" height="45" alt="Логотип Неодент">
-              </picture>
+                <picture>
+                  <source srcset="img/logo_desctop.webp" media="(min-width: 920px)">
+                  <source srcset="img/logo_desctop.png" media="(min-width: 920px)">
+                  <source srcset="img/logo_mobile.webp">
+                  <img class="page-header__logo-img" src="img/logo_mobile.png" width="120" height="45" alt="Логотип Неодент">
+                </picture>
             </a>
               <p>Стоматологические материалы <br>
                 и оборудование</p>
             </div>
-          <button class="btn btn--feedback">Заказать звонок</button>
+          <div class="page-header--feedback">
+            <button data-hystmodal="#feedback" class="btn page-header--btn">Заказать звонок</button>
+          </div>
+          <!-- /.page-header page-header--btn -->
           <div class="contact page-header--contact">
-              <div class="phone">8 800 000 00 00</div>
-              <div class="social">
-                <a href="">Фейсбук</a>
-                <a href="">Вконтакте</a>
-                <a href="">Инстаграмм</a>
+              <div class="contact__phone page-header--phone">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</div>
+              <div class="page-header--social social">
+                <a class="social--fb page-header--fb" href=""></a>
+                <a class="social--vk page-header--vk" href=""></a>
+                <a class="social--im page-header--im" href=""></a>
               </div>
-              <div class="address">
-                127015, г. Москва, ул. Новодмитровская,
+              <div class="contact__address page-header--address">
+                127015, г. Москва, ул. Новодмитровская, <br>
                 д.5А стр.4, подъезд 2, этаж 1
               </div>
             </div>
-          <ul class="top-navigation page-header--nav">
+          <div class="personal page-header--personal">
+            <div class="search personal__search">
+              <form action="">
+                <input class="search__field" type="text">
+                <button class="personal__search-btn search__btn page-header--search-btn">
+                  <span class="visually-hidden">Поиск</span>
+                </button>
+              </form>
+            </div>
+            <a href="" class="personal__login page-header--login"></a>
+            <a href="" class="personal__cart page-header--cart">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </div>
+          <!-- /.personal -->
+          <div class="page-header--nav">
+            <ul class="top-navigation top-navigation--no-js">
               <li class="top-navigation__item">
                 <a class="top-navigation__link top-navigation__link--current-item">О компании</a>
               </li>
-
               <li class="top-navigation__item">
                 <a class="top-navigation__link " href="catalog.html">Каталог</a>
               </li>
-
               <li class="top-navigation__item">
                 <a class="top-navigation__link " href="form.html">Акции</a>
               </li>
@@ -73,66 +96,76 @@
                 <a class="top-navigation__link " href="form.html">Контакты</a>
               </li>
             </ul>
-          <div class="personal page-header--personal">
-            <div class="search">
-              <form action=""><input type="text">
-                <button>Поиск</button>
-              </form>
-            </div>
-            <div class="login">
-
-            </div>
-            <div class="cart">
-              Корзина
-            </div>
           </div>
-          <!-- /.personal -->
+          <!-- /.page-header--nav -->
           </div>
           <!-- /.page-header__wrapper -->
       </header>
+      <!-- /.page-header END header.php -->
+
 
       <main class="page-main">
-        <section class="main-banner">
-          <div class="wrapper">
-            <div class="main-banner__slider slider">
-              <div class="slider__item">
-                <h2>Стоматологические материалы
-                  и оборудование</h2>
-                <button class="btn">Подробнее</button>
+        <section class="slider page-banner owl-carousel">
+              <div class="slider__item page-banner__item" style="background-image: url('img/banner.jpg')">
+                <div class="page-banner__wrapper wrapper">
+                    <h2 class="page-banner__header">Стоматологические материалы <br>
+                      и оборудование</h2>
+                    <button class="btn btn--more">Подробнее</button>
+                </div>
+                <!-- /.slider__wrapper -->
               </div>
-            </div>
-          </div>
         </section>
         <section class="popular">
           <div class="wrapper">
-            <ul>
-            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
-              <div class="price">17 242 руб</div>
-              <button class="btn">Купить</button>
-            </li>
-            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
-              <div class="price">17 242 руб</div>
-              <button class="btn">Купить</button>
-            </li>
-            <li><img src="" alt=""><a href="">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
-              <div class="price">17 242 руб</div>
-              <button class="btn">Купить</button>
-            </li>
-          </ul>
+            <h3 class="popular__header">Популярные товары</h3>
+            <div class="popular__list slider">
+              <div class="popular__item slider__item">
+                <img src="https://via.placeholder.com/250x100" alt="">
+                <a class="popular__link">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+                <div class="popular__buy">
+                  <div class="popular__price">17 242 руб</div>
+                  <button class="btn btn--buy">Купить</button>
+                </div>
+                <!-- /.popular__buy -->
+              </div>
+              <div class="popular__item slider__item">
+                <img src="https://via.placeholder.com/250x250" alt="">
+                <a class="popular__link">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+                <div class="popular__buy">
+                  <div class="popular__price">17 242 руб</div>
+                  <button class="btn btn--buy">Купить</button>
+                </div>
+                <!-- /.popular__buy -->
+              </div>
+              <div class="popular__item slider__item">
+                <img src="https://via.placeholder.com/250x250" alt="">
+                <a class="popular__link">Ультразвуковой скейлер DTE-D3, 5 насадок в комплекте (GD1x2, GD2, GD4, PD1)</a>
+                <div class="popular__buy">
+                  <div class="popular__price">17 242 руб</div>
+                  <button class="btn btn--buy">Купить</button>
+                </div>
+                <!-- /.popular__buy -->
+              </div>
+          </div>
           </div>
         </section>
         <section class="section">
-          <ul>
-            <li><a href=""><img src="" alt="">Терапия</a></li>
-            <li><a href=""><img src="" alt="">Хирургия</a></li>
-            <li><a href=""><img src="" alt="">Ортопедия</a></li>
-            <li><a href=""><img src="" alt="">Ортодонтия</a></li>
-            <li><a href=""><img src="" alt="">ЗТЛ</a></li>
-            <li><a href=""><img src="" alt="">Оборудование</a></li>
-          </ul>
+          <div class="wrapper">
+            <h3 class="section__header">Разделы стоматологии</h3>
+            <div class="section__list slider">
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(1).png" alt="">Терапия</a></div>
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(2).png" alt="">Хирургия</a></div>
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(3).png" alt="">Ортопедия</a></div>
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(4).png" alt="">Ортодонтия</a></div>
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(5).png" alt="">ЗТЛ</a></div>
+              <div class="section__item slider__item"><a class="section__link"><img src="img/section_(6).png" alt="">Оборудование</a></div>
+            </div>
+          </div>
+          <!-- /.wrapper -->
+
         </section>
         <section class="advantage">
-          <div class="wrapper">
+          <div class="wrapper advantage__wrapper">
             <ul class="advantage__list">
               <li class="advantage__item advantage__item--delivery">Доставка от 3-х дней</li>
               <li class="advantage__item advantage__item--range">3&nbsp;000 товаров в ассортименте</li>
@@ -143,122 +176,188 @@
           </div>
         </section>
         <section class="description">
-          <div class="wrapper">
-            <div class="descrition__images"><img src="" alt=""><img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+          <div class="wrapper description__wrapper">
+            <div class="description__images">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
+              <img src="https://via.placeholder.com/270x185" alt="">
             </div>
-
-          <div class="description__text">
-            <p>Мы рады приветствовать Вас в специализированном интернет-магазине стоматологического оборудования Каталог наших товаров включает в себя все, что
-            <p>необходимо для комплексного оснащения стоматологического кабинета и зуботехнической лаборатории:</p>
-            <p> оборудование и мебель; материалы и инструменты;</p>
-            <p>лекарственные препараты и профилактические средства; литература и обучающие материалы.</p>
-            <p>Современное оснащение рабочего места врача-стоматолога медицинскими инструментами, оборудованием и материалами - залог оказания к. Текст о компа| услуг и эффективной помощи пациентам вне зависимости от того, о каком направлении идет речь - будь то терапевтическая, эстетическая, XI-ортодонтическая стоматология, пародонтология или имплантология. При выборе необходимых товаров важно обратить внимание не тольн характеристики, первоочередным является качество - оно обеспечивается использованием соответствующего сырья и строгим контролем на производства. Сотрудничает только с надежными поставщиками стоматологических товаров, поэтому в их качестве не приходится сомнева отвечают всем принятым требованиям и обладают нужными характеристиками Товары представлены производителями с мировым именем: Зро(о0еп1а1, Оеп1атепса, Ы1С, 3|пд|-Рак и др.
-            </p>
-            <p> Для того, чтобы купить необходимые товары, достаточно обратиться в интернет-магазин - все для стоматологии от расходных материалов до стоматологических установок и современного оборудования легко найти на страницах каталога.</p>
-            </p>
+            <div class="description__text">
+              <div class="description__first">
+                <p>Мы рады приветствовать Вас в специализированном интернет-магазине стоматологического оборудования Каталог наших товаров включает в себя все, что
+                <p>необходимо для комплексного оснащения стоматологического кабинета и зуботехнической лаборатории:</p>
+              </div>
+              <div class="description__more">
+              <p> оборудование и мебель; материалы и инструменты;</p>
+              <p>лекарственные препараты и профилактические средства; литература и обучающие материалы.</p>
+              <p>Современное оснащение рабочего места врача-стоматолога медицинскими инструментами, оборудованием и материалами - залог оказания к. Текст о компа| услуг и эффективной помощи пациентам вне зависимости от того, о каком направлении идет речь - будь то терапевтическая, эстетическая, XI-ортодонтическая стоматология, пародонтология или имплантология. При выборе необходимых товаров важно обратить внимание не тольн характеристики, первоочередным является качество - оно обеспечивается использованием соответствующего сырья и строгим контролем на производства. Сотрудничает только с надежными поставщиками стоматологических товаров, поэтому в их качестве не приходится сомнева отвечают всем принятым требованиям и обладают нужными характеристиками Товары представлены производителями с мировым именем: Зро(о0еп1а1, Оеп1атепса, Ы1С, 3|пд|-Рак и др.
+              </p>
+              <p> Для того, чтобы купить необходимые товары, достаточно обратиться в интернет-магазин - все для стоматологии от расходных материалов до стоматологических установок и современного оборудования легко найти на страницах каталога.</p>
+              </p>
+              </div>
           </div>
           </div>
         </section>
         <section class="maker">
-          <div class="maker__slider slider">
-            <div class="slider__item">
-              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
-            </div>
-            <div class="slider__item">
-              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
-            </div>
-            <div class="slider__item">
-              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
-            </div>
-            <div class="slider__item">
-              <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
-            </div>
-          </div>
+         <div class="wrapper maker__wrapper">
+           <h3 class="maker__header">Производители</h3>
+           <!-- /.maker__header -->
+           <div class="maker__slider slider">
+                     <div class="slider__item maker__item">
+                       <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+                     </div>
+                     <div class="slider__item maker__item">
+                       <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+                     </div>
+                     <div class="slider__item maker__item">
+                       <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+                     </div>
+                     <div class="slider__item maker__item">
+                       <img src="https://via.placeholder.com/237x111" width="237px" height="111px" alt="">
+                     </div>
+                   </div>
+         </div>
+         <!-- /.wrapper maker__wrapper -->
 
         </section>
         <section class="certificate">
-          <h2>Сертификаты</h2>
-          <ul class="certificate__list">
-            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
-            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
-            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
-            <li class="certificate__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
-          </ul>
+          <div class="wrapper certificate__wrapper"><h2 class="certificate__header">Сертификаты</h2>
+                    <ul class="certificate__list slider">
+                      <li class="certificate__item slider__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+                      <li class="certificate__item slider__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+                      <li class="certificate__item slider__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+                      <li class="certificate__item slider__item"><img src="https://via.placeholder.com/270x370" width="270px" height="370px" alt=""></li>
+                    </ul></div>
+          <!-- /.wrapper certificate__wrapper -->
         </section>
         <section class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A670cce6f528ac8ed8a1d2a23d7361471642baae03b8a56c21d4c6fc4181853c6&amp;source=constructor" width="100%" height="800" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A670cce6f528ac8ed8a1d2a23d7361471642baae03b8a56c21d4c6fc4181853c6&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
         </section>
       </main>
 
       <footer class="page-footer">
-        <div class="column">
-          <nav>
-            <ul>
-              <li><a href="">О компании</a><a href="">Каталог</a><a href="">Акции</a><a href="">Отзывы</a></li>
-            </ul>
-          </nav>
-          <div class="personal footer--personal">
-            <div class="search">
-              <form action=""><input type="text">
-                <button>Поиск</button>
-              </form>
+        <div class="wrapper page-footer__wrapper">
+          <div class="column">
+                  <nav>
+                    <ul class="page-footer__nav">
+                      <li class="page-footer__item">
+                        <a class="page-footer__link">О компании</a>
+                      </li>
+                      <li class="page-footer__item">
+                        <a class="page-footer__link">Каталог</a>
+                      </li>
+                      <li class="page-footer__item">
+                        <a class="page-footer__link">Акции</a>
+                      </li>
+                      <li class="page-footer__item">
+                        <a class="page-footer__link">Отзывы</a>
+                      </li>
+                    </ul>
+                  </nav>
+            <div class="personal page-footer--personal">
+              <div class="search personal__search">
+                <form action=""><input class="search__field" type="text">
+                  <button class="personal__search-btn search__btn page-footer--search-btn"><span class="visually-hidden">Поиск</span></button>
+                </form>
+              </div>
+              <a href="" class="personal__login page-footer--login"></a>
+              <a href="" class="personal__cart page-footer--cart">
+                <span class="visually-hidden">Корзина</span>
+              </a>
             </div>
-            <div class="login">
-
-            </div>
-            <div class="cart">
-              Корзина
-            </div>
+                  <!-- /.personal -->
+                </div>
+           <!-- /.column -->
+          <div class="column">
+            <nav>
+              <ul class="page-footer__nav">
+                    <li class="page-footer__item">
+                      <a class="page-footer__link">Доставка</a>
+                    </li>
+                <li class="page-footer__item">
+                      <a class="page-footer__link">Сертификаты</a>
+                </li>
+                <li class="page-footer__item">
+                      <a class="page-footer__link">Семинары</a>
+                </li>
+                <li class="page-footer__item">
+                      <a class="page-footer__link">Контакты</a>
+                </li>
+                  </ul>
+            </nav>
           </div>
-          <!-- /.personal -->
-        </div>
-        <!-- /.column -->
-        <div class="column"><nav><ul>
-            <li><a href="">Доставка</a><a href="">Сертификаты</a><a href="">Семинары</a><a href="">Контакты</a></li>
-          </ul></nav></div>
-        <!-- /.column -->
-        <div class="column"><nav><ul>
-         <li><a href="">Терапия</a><a href="">Хирургия</a><a href="">Оборудование</a><a href="">Ортодонтия</a><a href="">Ортопедия</a><a href="">ЗТЛ</a></li>
-        </ul></nav></div>
-        <!-- /.column -->
-        <div class="contact contact--footer">
-          <div class="phone">8 800 000 00 00</div>
-          <a href="mailto:shop@mydent24.ru" class="email">shop@mydent24.ru</a>
-          <!-- /.email -->
-          <div class="social">
-            <a href="">Фейсбук</a>
-            <a href="">Вконтакте</a>
-            <a href="">Инстаграмм</a>
+          <!-- /.column -->
+          <div class="column">
+            <nav>
+              <ul class="page-footer__nav">
+                 <li class="page-footer__item">
+                   <a class="page-footer__link">Терапия</a>
+                 </li>
+                <li class="page-footer__item">
+                   <a class="page-footer__link">Хирургия</a>
+                </li>
+                <li class="page-footer__item">
+                   <a class="page-footer__link">Оборудование</a>
+                </li>
+                <li class="page-footer__item">
+                   <a class="page-footer__link">Ортодонтия</a>
+                </li>
+                <li class="page-footer__item">
+                   <a class="page-footer__link">Ортопедия</a>
+                </li>
+                <li class="page-footer__item">
+                   <a class="page-footer__link">ЗТЛ</a>
+                </li>
+                </ul>
+            </nav>
           </div>
-          <div class="address">
-            127015, г. Москва, ул. Новодмитровская,
-            д.5А стр.4, подъезд 2, этаж 1
-          </div>
-        </div>
-        <div class="column">
-          <button class="btn btn--feedback">Заказать звонок</button>
-          <div class="page-footer__logo">
-            <a>
-              <picture>
-                <source class="page-header__logo-desktop" srcset="img/logo-desktop.svg" media="(min-width: 1320px)">
-                <source class="page-header__logo-tablet" srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-                <img class="page-header__logo-mobile" src="img/logo.svg" width="33" height="38" alt="Логотип cat energy">
-              </picture>
+          <!-- /.column -->
+          <div class="contact page-footer--contact">
+            <div class="contact__phone">8 800 000 00 00</div>
+            <a class="contact__email" href="mailto:shop@mydent24.ru">
+              shop@mydent24.ru
             </a>
-            <p>Стоматологические материалы
-              и оборудование</p>
+            <div class="contact__address page-footer--address">
+              127015, г. Москва, ул. Новодмитровская, <br>
+              д.5А стр.4, подъезд 2, этаж 1
+            </div>
+            <div class="contact__social">
+              <a class="social--fb page-footer--fb" href=""></a>
+              <a class="social--vk page-footer--vk" href=""></a>
+              <a class="social--im page-footer--im" href=""></a>
+            </div>
           </div>
+          <div class="column column--logo">
+                  <button data-hystmodal="#feedback" class="btn page-footer--btn">Заказать звонок</button>
+                  <div class="page-footer__logo">
+                    <a>
+                      <picture>
+                        <source srcset="img/logo-footer-mobile.webp">
+                        <img class="page-header__logo-mobile" src="img/logo-footer-mobile.png" width="160px" height="60px" alt="Неодент">
+                      </picture>
+                    </a>
+                    <p>Стоматологические материалы
+                      и оборудование</p>
+                  </div>
+                </div>
+          <!-- /.column -->
+          <div class="page-footer__create">
+            Сделано в веб-студии <a class="page-footer__link">SeoMAX</a>
+          </div>
+          <!-- /.page-footer__create -->
         </div>
-        <!-- /.column -->
+        <!-- /.wrapper page-footer__wrapper -->
       </footer>
+
+      <script src="js/libs/modal.js"></script>
+      <script src="js/libs/jquery.min.js"></script>
+      <script src="js/libs/owl.carousel.min.js"></script>
       <script src="js/script.min.js"></script>
-  </body>
+  </div>
+</body>
 </html>

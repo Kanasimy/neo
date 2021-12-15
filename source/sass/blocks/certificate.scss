@@ -1,0 +1,86 @@
+.certificate {
+  background-image: url("../img/certificate.jpg");
+  background-size: cover;
+  background-color: $black;
+  padding: $section-padding-mobile 0;
+  @media (min-width: $mobile-max-width) {
+    padding: $section-padding 0;
+  }
+  &__header {
+    color: white;
+    text-align: center;
+  }
+&__list {
+  padding: 0;
+  margin:0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media (min-width: $mobile-max-width) {
+    flex-direction: row;
+    gap:27px;
+  }
+}
+  &__item {
+    width: 100%;
+    max-width: 240px;
+    @media (min-width: $mobile-max-width) {
+      flex-basis: 24%;
+    }
+  }
+
+  .owl-prev, .owl-next {
+    span {
+      color: $white;
+      opacity: 0.7;
+      font-size: 35px;
+    }
+  }
+  .owl-item {
+    padding:0 30px;
+  }
+  .owl-prev {
+    left: 0px;
+  }
+  .owl-next {
+    right: 0px
+  }
+  @media (min-width: $mobile-max-width) {
+    .owl-carousel {
+      padding:0 60px;
+    }
+    .owl-carousel .certificate__item {
+      max-width: 360px;
+    }
+    .owl-prev {
+      left: -60px;
+    }
+    .owl-next {
+      right:-60px
+    }
+    .owl-item {
+      padding:0 15px;
+    }
+    .owl-prev, .owl-next {
+      span {
+        font-size: 70px;
+      }
+    }
+  }
+  @media (min-width: $mobile-min-width) {
+    .owl-carousel .certificate__item {
+      max-width: 280px;
+    }
+    .owl-prev {
+      left: 0px;
+    }
+    .owl-next {
+      right: 0px
+    }
+  }
+}
+
+

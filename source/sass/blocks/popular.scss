@@ -1,0 +1,103 @@
+.popular {
+  background: $section-bg;
+  padding: $section-padding-mobile 0;
+  @media (min-width: $mobile-max-width) {
+    padding: $section-padding 0;
+  }
+  overflow: auto;
+&__header {
+  text-align: center;
+  color: $black;
+}
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    @media (min-width: $mobile-max-width) {
+      padding: 0 34px;
+    }
+  }
+
+  &__item {
+    flex-shrink: 1;
+    flex-grow: 0;
+    column-gap: $h-padding * 2;
+    text-align: center;
+    padding: 20px 15px 32px 15px;
+    width: 100%;
+    min-height: 385px;
+    max-width: 360px;
+    background: $white;
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    @media (min-width: $mobile-max-width) {
+      width: 33.3333333333%;
+      margin-bottom: 0;
+      flex: 0 0 auto;
+    }
+  }
+  &__link {
+    margin: $v-padding 0;
+    display: inline-block;
+    color: $black;
+    &:focus, &:visited {
+      color: $black;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__price {
+    font-size: 14px;
+    font-weight: bold;
+    color: $text-black;
+    @media (min-width: $mobile-max-width) {
+      font-size: 18px;
+    }
+  }
+  .product-item-info-container {
+    flex-grow: 1;
+    .btn {
+      width:100%;
+      max-width: 120px;
+      float:right;
+      font-size: 14px;
+      @media (min-width: $mobile-max-width) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+
+    .owl-prev, .owl-next {
+      span {color: $gray;}
+    }
+    .owl-next {
+      right:-15px;
+    }
+    .owl-prev {
+      left: -15px;
+    }
+    @media (min-width: $mobile-min-width) {
+      .owl-next {
+        right:0px;
+      }
+      .owl-prev {
+        left: 0px;
+      }
+    }
+  }
+}
+.owl-carousel .popular__item {
+  max-width: 360px;
+  width:100%;
+  margin: 0 auto
+}

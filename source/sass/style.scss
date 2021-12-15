@@ -4,8 +4,37 @@
 @import "global/mixins";
 @import "global/global";
 @import "global/normalize";
+@import "global/btn";
 
 // <<<---Index BLock--->>>
+@import "blocks/page-body";
+@import "blocks/main";
+@import "blocks/main-inner";
 @import "blocks/page-header";
+@import "blocks/top-navigation";
+@import "blocks/social";
+@import "blocks/contact";
+@import "blocks/search";
+@import "blocks/owl";
+@import "blocks/burger-menu";
+@import "blocks/popular";
+@import "blocks/catalog";
+@import "blocks/section";
+@import "blocks/advantage";
+@import "blocks/description";
+@import "blocks/maker";
+@import "blocks/certificate";
+@import "blocks/page-banner";
+@import "blocks/personal";
+@import "blocks/map";
+@import "blocks/checkbox";
+@import "blocks/bx-breadcrumb";
+@import "blocks/bx-sidebar-block";
+@import "blocks/modal";
+@import "blocks/page-footer";
+@import "blocks/about";
 
+// <<<---Libs--->>>
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
 

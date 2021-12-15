@@ -1,0 +1,34 @@
+.about_team {
+  width: 100%;
+  overflow: hidden;
+  //display: grid;
+  //margin: 0 auto;
+  //grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
+  //gap: 40px;
+  //justify-items: center;
+  .owl-stage {
+
+  }
+  &__item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__name, &__post, &__phone, {
+    text-align: center;
+  }
+  &__name {
+    font-weight: bold;
+    margin:10px 0 20px;
+  }
+  &__photo {
+    width: 100%;
+    max-width: 180px;
+  }
+  @media (max-width: 479px) {
+    //grid-template-columns: repeat(auto-fit, minmax(300px, 373px));
+    &__photo {
+      object-fit: cover;
+    }
+  }
+}

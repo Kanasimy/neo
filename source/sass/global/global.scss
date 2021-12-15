@@ -1,3 +1,47 @@
+html {
+  height:100%;
+  min-height: 100%;
+}
+h1, h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: $mobile-max-width) {
+  h1, h2 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0 0 55px 0;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 55px 0;
+  }
+}
+.wrapper {
+  max-width: $desktop-width;
+  width: calc(100vw - 30px);
+  margin:0 auto;
+  padding: 0;
+  @media (min-width: $mobile-min-width) {
+    //width: 100%;
+    //padding: 0 $h-padding;
+  }
+}
+.main-inner .wrapper {
+  width: 100%;
+}
 // visually-hidden
 
 .visually-hidden:not(:focus):not(:active),
@@ -28,10 +72,21 @@ input[type="radio"].visually-hidden {
 img {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 // a
 
 a {
   text-decoration: none;
+  &:hover {
+    color:$light-blue;
+  }
+  &:visited, &:focus {
+    color: inherit;
+  }
+}
+
+.page-catalog-inner,.page-body-inner {
+  background-color: $section-bg;
 }

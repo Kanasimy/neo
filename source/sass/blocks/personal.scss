@@ -1,0 +1,29 @@
+.personal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  form {
+    margin: 0;
+  }
+  &__login {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left:$h-padding;
+  }
+  &__search-btn {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  &__cart {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left:$h-padding;
+  }
+}

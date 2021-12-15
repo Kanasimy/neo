@@ -1,0 +1,11 @@
+.page-body {
+  @include fonts('Arial Narrow', normal, normal, 14px, 1.2, $black);
+  @media (min-width: $mobile-max-width) {
+    @include fonts('Arial Narrow', normal, normal, 16px, 1.2, $black)
+  }
+  height:100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}

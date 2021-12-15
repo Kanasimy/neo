@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  min-height: 30px;
+  line-height: 30px;
+  @media (min-width: $mobile-max-width) {
+    display: grid;
+    align-self: start;
+    min-height: auto;
+    line-height: 1.2;
+  }
+  &__phone {
+    display: inline-block;
+    @media (min-width: $mobile-max-width) {
+    width: 226px;}
+  }
+  &__email {
+    color: #ffffff;
+    display: block;
+    @media (min-width: $mobile-max-width) {
+      display: inline-block;
+    }
+  }
+}

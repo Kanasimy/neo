@@ -1,0 +1,48 @@
+.search{
+  position: relative;
+  width:20px;
+}
+.search__form{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-25%,-50%);
+  transition: all 1s;
+  width: 20px;
+  height: 40px;
+  padding: 4px;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.search__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: transparent!important;
+  line-height: 40px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 15px;
+  padding: 0 5px 0 30px;
+}
+
+.search__form:hover,
+.search__form:active,
+.search__form:focus,
+{
+  width: 155px;
+  cursor: pointer;
+  background-color: $section-bg;
+  border: 1px solid $black;
+}
+
+.search__form:hover .search__input{
+  display: block;
+}
+
