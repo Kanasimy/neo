@@ -30,6 +30,7 @@
   font-size: 1em;
   border-radius: 15px;
   padding: 0 5px 0 30px;
+  color: $black;
 }
 
 .search__form:hover,
@@ -40,6 +41,16 @@
   cursor: pointer;
   background-color: $section-bg;
   border: 1px solid $black;
+}
+
+.page-footer--personal .search__form:hover,
+.page-footer--personal .search__form:active,
+.page-footer--personal .search__form:focus,{
+ width: 240px
+}
+
+.page-footer--personal .search__form {
+  transform: translate(-3%,-36%);
 }
 
 .search__form:hover .search__input{

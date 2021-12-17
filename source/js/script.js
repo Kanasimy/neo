@@ -135,7 +135,7 @@ $(document).ready(function(){
         items:4,
       },
       1200:{
-        items:8,
+        items:5,
       }
     },
     loop: true,
@@ -143,7 +143,7 @@ $(document).ready(function(){
     nav:true,
     autoHeight: true,
     autoplay: false,
-    margin:30,
+    margin:50,
     autoplayTimeout: 7000
   });
 
