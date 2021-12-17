@@ -10,7 +10,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
  * @global CUser $USER
  */
 ?>
-<div class="mfeedback">
+<div class="mfeedback p-4">
 <?if(!empty($arResult["ERROR_MESSAGE"]))
 {
 	foreach($arResult["ERROR_MESSAGE"] as $v)
