@@ -51,6 +51,7 @@
   "dependencies": {
     "caniuse-lite": "^1.0.30001283",
     "jquery": "^3.6.0",
-    "owl.carousel": "^2.3.4"
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
   }
 }

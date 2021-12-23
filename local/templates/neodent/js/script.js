@@ -83,6 +83,14 @@ $(document).ready(function(){
     autoplayTimeout: 7000
   });
 
+  // слайдер в товаре
+  $('.product-item-detail-slider-controls-block').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    vertical: true,
+    verticalSwiping: true,
+  });
 
   //товары которые покупают
   $('.catalog__list--recommend').owlCarousel({

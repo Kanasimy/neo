@@ -187,6 +187,7 @@
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/libs/modal.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/libs/jquery.min.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/libs/owl.carousel.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/libs/slick.min.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/script.js");?>
 </body>
 </html>
